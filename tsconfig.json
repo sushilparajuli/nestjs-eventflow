@@ -17,10 +17,12 @@
     "skipLibCheck": true,
     "strict": true,
     "strictPropertyInitialization": false,
-    "types": [
-      "vitest/globals",
-      "node"
-    ]
+    "baseUrl": ".",
+    "types": ["vitest/globals", "node"],
+    "paths": {
+      "@app/common": ["./libs/common/src"],
+      "@app/common/*": ["./libs/common/src/*"]
+    }
   },
   "files": [],
   "references": [

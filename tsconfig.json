@@ -1,6 +1,5 @@
 {
   "compilerOptions": {
-    "baseUrl": ".",
     "module": "nodenext",
     "moduleResolution": "nodenext",
     "resolvePackageJsonExports": true,
@@ -19,14 +18,29 @@
     "strict": true,
     "strictPropertyInitialization": false,
     "ignoreDeprecations": "6.0",
-    "types": ["vitest/globals", "node"],
+    "types": [
+      "vitest/globals",
+      "node"
+    ],
     "paths": {
-      "@app/common": ["./libs/common/src/index.ts"],
-      "@app/common/*": ["./libs/common/src/*"],
-      "@app/database": ["./libs/database/src/index.ts"],
-      "@app/database/*": ["./libs/database/src/*"],
-      "@app/kafka": ["./libs/kafka/src/index.ts"],
-      "@app/kafka/*": ["./libs/kafka/src/*"]
+      "@app/common": [
+        "./libs/common/src/index.ts"
+      ],
+      "@app/common/*": [
+        "./libs/common/src/*"
+      ],
+      "@app/database": [
+        "./libs/database/src/index.ts"
+      ],
+      "@app/database/*": [
+        "./libs/database/src/*"
+      ],
+      "@app/kafka": [
+        "./libs/kafka/src/index.ts"
+      ],
+      "@app/kafka/*": [
+        "./libs/kafka/src/*"
+      ]
     }
   },
   "files": [],
@@ -36,6 +50,12 @@
     },
     {
       "path": "./apps/auth-service/tsconfig.app.json"
+    },
+    {
+      "path": "./apps/nestjs-eventflow/tsconfig.app.json"
+    },
+    {
+      "path": "./apps/events-service/tsconfig.app.json"
     }
   ]
 }

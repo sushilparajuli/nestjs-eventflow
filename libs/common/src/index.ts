@@ -9,3 +9,6 @@ export * from './interfaces/index.js';
 
 // Utils
 export * from './utils/index.js';
+
+// DTO
+export * from './dto/index.js';

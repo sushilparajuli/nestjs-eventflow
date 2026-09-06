@@ -1,5 +1,5 @@
-export * from './database.module';
-export * from './database.service';
+export * from './database.module.js';
+export * from './database.service.js';
 
 // Schemas
-export * from './schema';
+export * from './schema/index.js';

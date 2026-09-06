@@ -1,5 +1,6 @@
 {
   "compilerOptions": {
+    "baseUrl": ".",
     "module": "nodenext",
     "moduleResolution": "nodenext",
     "resolvePackageJsonExports": true,
@@ -17,29 +18,15 @@
     "skipLibCheck": true,
     "strict": true,
     "strictPropertyInitialization": false,
-    "types": [
-      "vitest/globals",
-      "node"
-    ],
+    "ignoreDeprecations": "6.0",
+    "types": ["vitest/globals", "node"],
     "paths": {
-      "@app/common": [
-        "./libs/common/src"
-      ],
-      "@app/common/*": [
-        "./libs/common/src/*"
-      ],
-      "@app/database": [
-        "./libs/database/src"
-      ],
-      "@app/database/*": [
-        "./libs/database/src/*"
-      ],
-      "@app/kafka": [
-        "./libs/kafka/src"
-      ],
-      "@app/kafka/*": [
-        "./libs/kafka/src/*"
-      ]
+      "@app/common": ["./libs/common/src/index.ts"],
+      "@app/common/*": ["./libs/common/src/*"],
+      "@app/database": ["./libs/database/src/index.ts"],
+      "@app/database/*": ["./libs/database/src/*"],
+      "@app/kafka": ["./libs/kafka/src/index.ts"],
+      "@app/kafka/*": ["./libs/kafka/src/*"]
     }
   },
   "files": [],

@@ -7,7 +7,7 @@
     "baseUrl": "../..",
     "ignoreDeprecations": "6.0",
     "paths": {
-      "@app/common": ["./libs/common/src/index.ts"],
+      "@app/common": ["./libs/common/src"],
       "@app/common/*": ["./libs/common/src/*"]
     },
     "outDir": "../../dist/apps/api-gateway"

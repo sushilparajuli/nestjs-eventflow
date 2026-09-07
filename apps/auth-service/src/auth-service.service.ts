@@ -12,7 +12,6 @@ import { DatabaseService, users } from '@app/database';
 import { JwtService } from '@nestjs/jwt';
 import { eq } from 'drizzle-orm';
 import * as bcrypt from 'bcrypt';
-import { timestamp } from 'drizzle-orm/gel-core';
 
 @Injectable()
 export class AuthServiceService implements OnModuleInit {

@@ -24,7 +24,7 @@ export const events = pgTable('events', {
   date: timestamp('date').notNull(),
   location: varchar('location', { length: 255 }).notNull(),
   capacity: integer('capacity').notNull(),
-  price: integer('capacity').default(0).notNull(),
+  price: integer('price').default(0).notNull(),
   status: eventStatusEnum('status').default('DRAFT').notNull(),
   organizerId: uuid('organizer_id')
     .references(() => users.id)
